@@ -1,20 +1,19 @@
 # 💬 MyChatServer - Servidor de Chat Escalável
 
-Este repositório contém o **MyChatServer**, um servidor de chat escalável desenvolvido como parte de um exercício da **Code for All_**. O objetivo do projeto foi criar um servidor de chat para comunicação entre usuários, utilizando **ChatMensagens.All** como ferramenta para construção de um servidor robusto e escalável.
+Este repositório contém o **MyChatServer**, um servidor de chat escalável desenvolvido em **Java** como parte de um exercício da **Code for All_**. O objetivo do projeto foi criar um servidor de chat robusto que permite a comunicação entre usuários de forma eficiente, utilizando a arquitetura de servidor-cliente.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Node.js**: Ambiente de execução JavaScript no servidor.
-- **Socket.IO**: Biblioteca para comunicação em tempo real via WebSockets.
-- **Express**: Framework para construção de servidores web em Node.js.
-- **ChatMensagens.All**: Ferramenta utilizada para facilitar a comunicação e a construção do servidor de chat.
+- **Java**: Linguagem de programação utilizada para desenvolver o servidor e a lógica de comunicação.
+- **Java Sockets**: Tecnologia para comunicação em rede entre o cliente e o servidor.
+- **Threading**: Implementação de múltiplas threads para permitir a conexão de vários clientes simultaneamente.
 
 ## 🎨 Funcionalidades
 
-- **Comunicação em tempo real**: Envio e recebimento de mensagens em tempo real entre os usuários conectados.
-- **Escalabilidade**: O servidor foi projetado para ser escalável, permitindo o aumento do número de usuários sem perder desempenho.
-- **Sistema de salas**: Usuários podem ser divididos em salas de chat específicas para uma comunicação mais organizada.
-- **Persistência de mensagens**: Mensagens enviadas são armazenadas e podem ser acessadas posteriormente.
+- **Comunicação em tempo real**: Permite que os clientes enviem e recebam mensagens em tempo real.
+- **Escalabilidade**: O servidor é capaz de lidar com múltiplos clientes ao mesmo tempo, utilizando threads para gerenciar a comunicação.
+- **Salas de chat**: Clientes podem se conectar a uma sala de chat específica, permitindo conversas privadas e em grupo.
+- **Persistência de mensagens**: As mensagens são gerenciadas e transmitidas de forma eficiente entre os usuários conectados.
 
 ## 🚀 Como Usar
 
@@ -22,23 +21,23 @@ Este repositório contém o **MyChatServer**, um servidor de chat escalável des
    ```bash
    git clone https://github.com/andersoninn/MyChatServer.git
    
-2. Instale as dependências:
+2. Compile o código:
    ```bash
-   npm install
+   javac *.java
 
-3. Inicie a aplicação:
+3. Inicie o servidor:
    ```bash
-   npm run dev
+   java Server
  
-4. Abra o navegador e acesse:
+4. Para testar, execute o cliente em outro terminal:
    ```bash
-   http://localhost:3000
+   java ClientHandler
 
 ## 📝 Lições Aprendidas
-Construção de um servidor de chat escalável utilizando Node.js e Socket.IO.
-Implementação de comunicação em tempo real entre usuários em um ambiente de chat.
-Criação de sistemas de salas de chat e persistência de mensagens.
-Como projetar um sistema que pode ser escalado para suportar um maior número de usuários simultâneos.
+Desenvolvimento de um servidor de chat escalável utilizando Java e Sockets.
+Implementação de comunicação em tempo real entre múltiplos clientes.
+Gerenciamento de conexões simultâneas utilizando Threading para permitir que vários clientes se conectem ao servidor sem perda de desempenho.
+Como estruturar e organizar um servidor de chat eficiente para comunicação entre vários usuários.
 
 ---
 
